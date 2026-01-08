@@ -1,4 +1,29 @@
+/* General styling */
 body {
-  font-family: Arial;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+  background-color: #1e90ff;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+/* Sections */
+section {
+  background: white;
+  margin: 20px;
   padding: 20px;
+  border-radius: 8px;
+}
+
+/* Section titles */
+h2 {
+  color: #1e90ff;
 }
