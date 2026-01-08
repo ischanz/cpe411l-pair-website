@@ -8,74 +8,29 @@ body {
   color: #333;
 }
 
-/* Header */
-header {
-  background-color: #ff1e1e;
-  color: white;
-  padding: 30px;
-  text-align: center;
-}
-
-/* Navigation inside header */
-header nav {
-  margin-top: 15px;
-}
-
-header nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 10px;
-  font-weight: bold;
-}
-
-header nav a:hover {
-  color: #ffe600;
-}
-
-/* Sections */
-section {
-  background: white;
-  margin: 20px auto;
-  padding: 20px;
-  max-width: 800px;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-}
-
-section:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transform: translateY(-2px);
-}
-
-/* Section titles */
-h2 {
-  color: #ffb800;
-}
-
-/* Mobile responsiveness */
-@media (max-width: 600px) {
-  header {
-    padding: 25px 15px;
-  }
-
-  section {
-    margin: 10px;
-    padding: 15px;
-  }
-
-  header nav a {
-    display: inline-block;
-    margin: 5px 5px;
-  }
-}
-
 /* Smooth scrolling for the whole page */
 html {
   scroll-behavior: smooth;
 }
 
-/* Refined navigation hover effect */
+/* Header */
+header {
+  background-color: #ff1e1e;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Navigation */
+header nav {
+  margin-top: 20px;
+}
+
 header nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
   transition: color 0.3s ease, border-bottom 0.3s ease;
   border-bottom: 2px solid transparent;
 }
@@ -85,7 +40,74 @@ header nav a:hover {
   border-bottom: 2px solid #ffe600;
 }
 
-/* Ensure sections have enough space for the fixed layout */
+/* Sections */
 section {
-  scroll-margin-top: 20px; /* Prevents the header from overlapping the title when jumping to a section */
+  background: white;
+  margin: 25px auto;
+  padding: 25px;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  scroll-margin-top: 30px; /* Space for scrolling */
+}
+
+section:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transform: translateY(-3px);
+}
+
+h2 {
+  color: #ffb800;
+  border-bottom: 2px solid #f4f6f8;
+  padding-bottom: 10px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  header {
+    padding: 25px 15px;
+  }
+
+  section {
+    margin: 15px;
+    padding: 20px;
+  }
+
+  header nav a {
+    display: inline-block;
+    margin: 8px;
+  }
+}
+/* Table Styling */
+table {
+  margin-top: 15px;
+  font-size: 0.9em;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #333;
+  color: #f4f6f8;
+  margin-top: 50px;
+}
+
+footer p {
+  margin: 5px 0;
+  font-size: 0.85em;
 }
