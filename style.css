@@ -8,47 +8,67 @@ body {
   color: #333;
 }
 
+/* Smooth scrolling for the whole page */
+html {
+  scroll-behavior: smooth;
+}
+
 /* Header */
 header {
   background-color: #ff1e1e;
   color: white;
-  padding: 30px;
+  padding: 40px 20px;
   text-align: center;
 }
 
+/* Navigation */
 header nav {
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 header nav a {
   color: white;
   text-decoration: none;
-  margin: 0 10px;
+  margin: 0 15px;
   font-weight: bold;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  border-bottom: 2px solid transparent;
 }
 
 header nav a:hover {
   color: #ffe600;
+  border-bottom: 2px solid #ffe600;
 }
 
 /* Sections */
 section {
   background: white;
-  margin: 20px auto;
-  padding: 20px;
+  margin: 25px auto;
+  padding: 25px;
   max-width: 800px;
   border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
   transition: all 0.3s ease;
+  scroll-margin-top: 30px; /* Space for scrolling */
 }
 
 section:hover {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transform: translateY(-2px);
+  transform: translateY(-3px);
 }
 
-/* Section titles */
 h2 {
   color: #ffb800;
+  border-bottom: 2px solid #f4f6f8;
+  padding-bottom: 10px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
 }
 
 /* Mobile responsiveness */
@@ -58,12 +78,36 @@ h2 {
   }
 
   section {
-    margin: 10px;
-    padding: 15px;
+    margin: 15px;
+    padding: 20px;
   }
 
   header nav a {
     display: inline-block;
-    margin: 5px 5px;
+    margin: 8px;
   }
+}
+/* Table Styling */
+table {
+  margin-top: 15px;
+  font-size: 0.9em;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #333;
+  color: #f4f6f8;
+  margin-top: 50px;
+}
+
+footer p {
+  margin: 5px 0;
+  font-size: 0.85em;
 }
