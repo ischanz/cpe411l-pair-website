@@ -1,6 +1,6 @@
 /* General styling */
 body {
-  font-family: Arial, sans-serif;
+  font-family: Verdana, sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
@@ -26,4 +26,16 @@ section {
 /* Section titles */
 h2 {
   color: #1e90ff;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  header {
+    padding: 20px;
+  }
+
+  section {
+    margin: 10px;
+    padding: 15px;
+  }
 }
